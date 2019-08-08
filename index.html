@@ -1,16 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/sytle.css">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jennifer Moore</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dosis|Gruppo|Libre+Franklin|Muli|Nanum+Gothic|Nanum+Myeongjo|Open+Sans+Condensed:300|Quicksand|Raleway"
+        rel="stylesheet">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
 </head>
+
 <body>
-    <div>
-    <header class="text">My First Github Page!</header>
-    <iframe src="https://giphy.com/embed/e1BxgoFxAOmbK" width="480" height="392" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/woman-weekend-wonder-e1BxgoFxAOmbK">via GIPHY</a></p>
+
+    <!-- navbar -->
+    <!-- TODO make navbar stick ? -->
+    <nav>
+        <div class="nav-wrapper grey lighten-5">
+            <a href="#!" class="brand-logo black-text font hide-on-med-and-down">designer|developer</a>
+            <a href="#!" class="brand-logo black-text font show-on-medium-and-down">designer|developer</a>
+            <!--fix so centered on med or smaller-->
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                    class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <!-- these will link to A tag further down the page -->
+                <li><a href="#projects" class="font3 grey-text text-darken-2">PROJECTS</a></li>
+                <li><a href="#experience" class="font3 grey-text text-darken-2">EXPERIENCE</a></li>
+                <li><a href="assets/pdf/JenniferMoore.pdf" class="font3 grey-text text-darken-2">RESUME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- these will link to A tag further down the page -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#projects" class="font3 grey-text text-darken-2">PROJECTS</a></li>
+        <li><a href="#" class="font3 grey-text text-darken-2">EXPERIENCE</a></li>
+        <li><a href="#" class="font3 grey-text text-darken-2">RESUME</a></li>
+    </ul>
+
+    <!-- parallax -->
+    <div class="parallax-container hide-on-small-and-down">
+        <div class="parallax"><img src="assets/images/lightbulb.jpg" style="width: 50%">
+        </div>
     </div>
+
+    <!-- header block -->
+    <div class="section grey lighten-5"></div>
+    <div id="openPage" class="section grey lighten-5">
+        <div class="row container">
+            <h2 class="header font hide-on-med-and-down center-align">Need a designer|developer?</h2>
+            <h4 class="header font show-on-med-and-down hide-on-large-only center-align">Need a designer|developer?</h4>
+            <h2 id="lineheight" class="center-align grey-text text-darken-1 font3">Hi, I'm Jennifer Moore. Let's make your
+                place on the web and make it beautiful.
+                <br>
+                <br>
+                <a class="font3 grey-text lighten-1" href="https://www.linkedin.com/in/jennifer-moore-10b2b65/">LinkedIn</a>
+                <a class="font3 grey-text lighten-1" id="link" href="https://github.com/jperlmanmoore">Github</a>
+                <!-- <a class="font3 grey-text lighten-1" id="link" href="assets/pdf/Jennifer_Moore.pdf">Resume</a> -->
+            </h2>
+        </div>
+    </div>
+
+    <!-- parallax -->
+    <div class="parallax-container hide-on-small-and-down">
+        <div class="parallax"><img src="assets/images/make_it_happen.jpg" style="width: 50%">
+        </div>
+    </div>
+
+    <!-- project cards -->
+    <div class="section grey lighten-5">
+        <div class="container">
+            <!-- <div class="container"> -->
+            <h2 id="projects" class="font header text-grey text-darken-2">projects</h2>
+            <blockquote class="grey-text text-darken-1 font3">view the project & code
+                </blockquote>
+            <div class="row">
+                <div class="col s12 m5">
+
+                    <!-- card1 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/starwars.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Star Wars RPG<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1"
+                                    href="https://jperlmanmoore.github.io/unit-4-game/">See it in action</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1"
+                                    href="https://github.com/jperlmanmoore/unit-4-game">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">Star Wars RPG<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses Html, CSS, Bootstrap, and Javascript, and JQuery. In this fun game, I
+                                had the opportunity to
+                                really learn about dynamic rendering of elements in the DOM through javascript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m1"></div>
+
+                <!-- card2 -->
+                <div class="col s12 m5">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/giphy.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">OMG Gifs!<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://jperlmanmoore.github.io/giphy-api/">YOLO, so check it out!</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/giphy-api">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="font3 card-title grey-text text-darken-1">OMG Gifs!<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses Html, CSS, Bootstrap, and Javascript, and JQuery. While it was an
+                                opportunity to
+                                build my experience with Bootstrap and Javascript, I had the opportunity to learn about
+                                API calls.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m5">
+
+                    <!-- card3 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/edb.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Eat-da-Burger<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://whispering-temple-55320.herokuapp.com/">eat some burgers</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/edb">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">Eat-da-Burger<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses HTMl, CSS, Javascript, Jquery, Materialize, Handlebars, MySQL, Heroku, ClearDB. Please note, it is best to download this and run on your computer, because ClearDB does not prioritize the free account and it is not always avaialable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m1"></div>
+
+                <div class="col s12 m5">
+
+                    <!-- card4 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/storefront.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Bamazon<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/bamazon-app">Buy some stuff!</a></p>
+                            <hr>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">Bamazon<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This is a project that simulates a store. I used Javascript, Node, Express, and MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12 m5">
+    
+                    <!-- card5 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/liri.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">LIRI<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://drive.google.com/file/d/1bR-Ou5TD7nTxsuZUzgtlRjHbvz-7myzO/view">Watch it in action.</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/liri-node-app">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">LIRI<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses Javascript, Node, Axios, and Moments.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col m1"></div>
+    
+                <div class="col s12 m5">
+    
+                    <!-- card6 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/ff.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Friend Finder<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/FriendFinder">Find a Friend!</a></p>
+                            <hr>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">Friend Finder<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This is a project that made use of Node, Javascript, JQuery, Bootstrap, HTML, CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m5">
+    
+                    <!-- card7 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/wfd2.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">What's for Dinner?<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="">Watch it in action.</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/wfd3">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">LIRI<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses Javascript, Node, Axios, and Moments.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col m1"></div>
+    
+                <div class="col s12 m5">
+    
+                    <!-- card8 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/clicky.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Clicky!<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/clicky">Try to click them all!</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/clicky">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">Clicky<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses React, JSX, HTML, and CSS!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m5">
+    
+                    <!-- card9 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/readme001.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Go Bananas<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="https://gobananas.herokuapp.com/">Search an Idiom</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="https://github.com/jperlmanmoore/project3">View the code.</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">GoBananas<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">This project uses react, Express, MongoDB, and Node. It is deployed on Heroku with a Docker container.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col m1"></div>
+    
+                <div class="col s12 m5">
+    
+                    <!-- card10 -->
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/coming_soon.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-1 font3">Coming Soon<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a class="font3 grey-text lighten-1" href="#">Coming Soon</a></p>
+                            <hr>
+                            <p><a class="font3 grey-text lighten-1" href="#">Coming Soon</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-1 font3">Coming Soon<i
+                                    class="material-icons right">close</i></span>
+                            <p class="font3">Coming Soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    </div>   
+       
+        
+
+    <!-- parallax -->
+    <div class="parallax-container hide-on-small-and-down">
+        <div class="parallax"><img src="assets/images/think_out_box3.jpg" style="width: 50%">
+        </div>
+    </div>
+
+    <!-- skills and experience -->
+    <div class="section grey lighten-5">
+        <div class="row container">
+            <h2 id="experience" class="header font">skills & experience</h2>
+            <blockquote class="grey-text text-darken-1 font3">designer | developer
+            </blockquote>
+            <h5 id="lineheight" class="font3 grey-text text-darken-1">
+                My career has taken several directions - from artist, to non-profit work, to lawyer, and now web
+                designer and developer. In each role, I have been grateful for the opportunity to serve by helping others to resolve problems.
+                Web design and developement is a
+                natural extension of my past work. I'm excited to use my skills in design, communication, and development to help you
+                have a beautiful and functional place on the web.
+                <br>
+                <br>
+                My experience with web development started the GA Tech Coding Bootcamp in February
+                2019, but my experience in design started much earlier when I studied art in college,
+                and I developed storytelling and communication skills over my career as a lawyer.
+                <br>
+                <br>
+                To make the transition into web design and development, I have learned to implement front end technologies
+                including HTML, CSS, Bootstrap, and Materalize CSS,
+                and back end technologies including, JavaScript, JQuery, APIs, Firebase, and Node.js. As a developer, I enjoy creative
+                collaboration and problem solving. I seek opportunities for both design and
+                code. I'm eager to help you make your idea real.
+            </h5>
+        </div>
+    </div>
+
+    <!-- parallax -->
+    </div>
+    <div class="parallax-container hide-on-small-and-down">
+        <div class="parallax"><img src="assets/images/lightbubbles.jpg" style="width: 50%">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer white">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text blue-text text-lighten-2 font3">jperlmanmoore@gmail.com</h5>
+                    <p class="grey-text text-darken-2 font3">Jennifer Moore<br>478-227-3576<br>Macon, GA</p>
+                    <p class="grey-text text-darken-2 font3">Designer and developer wanting to help you find beautiful
+                        and durable
+                        solutions.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-darken-2 font3"
+                                href="www.linkedin.com/in/jennifer-moore-10b2b65">LinkedIn</a></li>
+                        <li><a class="grey-text text-darken-2 font3" href="https://github.com/jperlmanmoore">Github</a>
+                        </li>
+                        <li><a class="grey-text text-darken-2 font3" href="assets/pdf/JenniferMoore.pdf">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container grey-text">
+                © 2019 Copyright Text
+                <!-- <a class="grey-text right" href="#!">More Links</a> -->
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
